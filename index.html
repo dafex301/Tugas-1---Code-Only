@@ -1,0 +1,152 @@
+<!-- Kelompok Nakama
+1. Fahrel Gibran Alghany - 24060120130106
+2. Hanan Nurul Hardyana Zain - 24060120140148
+3. Muhammad Fiqih Ikhsan - 24060120140097
+4. Rayhan Ilyas Annabil - 24060120120004
+5. Rif'an Fatoni Febrianto - 24060120130073 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nakama - 仲間</title>
+  <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="Logo">Nakama</a>
+    <ul>
+      <li><a href="#">仲間</a></li>
+    </ul>
+  </header>
+
+  <!-- Section Parallax -->
+  <section>
+    <img src="images/bg-(1).png" id="bg" alt="">
+    <img src="images/moon.png" id="moon" alt="">
+    <img src="images/mountains_behind.png" id="mountains_behind" alt="">
+    <h2 id="text">Nakama</h2>
+    <a href="#intro" id="btn">Welcome</a>
+    <img src="images/mountains_front.png" id="mountains_front" alt="">
+  </section>
+
+  <!-- Slideshow Anggota -->
+  <div class="container" id="intro">
+    <div class="pages js-scroll slide-left">
+      <div class="page one ">
+        <div class="row-container">
+          <div class="left">
+            <div id="nama" class="text-9xl">Fahrel Gibran Alghany</div>
+            <div id="nim" class="text-2xl">24060120130106</div>
+          </div>
+          <div class="right">
+            <img src="images/dafex.png" class="max-w-lg" alt="">
+          </div>
+        </div>
+        <div>
+          <button onClick="slide('next')">&#10095;</button>
+        </div>
+      </div>
+      <div class="page two">
+        <div class="row-container">
+          <div class="left">
+            <div id="nama" class="text-9xl">Rayhan Illyas Annabil</div>
+            <div id="nim" class="text-2xl">24060120120004</div>
+          </div>
+          <div class="right">
+            <img src="images/rayhan.png" class="max-w-lg" alt="">
+          </div>
+        </div>
+        <div>
+          <button onClick="slide('previous')">&#10094;</button>
+          <button onClick="slide('next')">&#10095;</button>
+        </div>
+      </div>
+      <div class="page three">
+        <div class="row-container">
+          <div class="left">
+            <div id="nama" class="text-9xl">Rifan Fatoni Febrianto</div>
+            <div id="nim" class="text-2xl">24060120130073</div>
+          </div>
+          <div class="right">
+            <img src="images/rifan.png" class="max-w-lg" alt="">
+          </div>
+        </div>
+        <div>
+          <button onClick="slide('previous')">&#10094;</button>
+          <button onClick="slide('next')">&#10095;</button>
+        </div>
+      </div>
+      <div class="page four">
+        <div class="row-container">
+          <div class="left">
+            <div id="nama" class="text-9xl">Hanan Nurul Hardyana Zain</div>
+            <div id="nim" class="text-2xl">24060120140148</div>
+          </div>
+          <div class="right">
+            <img src="images/hanan.png" class="max-w-lg" alt="">
+          </div>
+        </div>
+        <div>
+          <button onClick="slide('previous')">&#10094;</button>
+          <button onClick="slide('next')">&#10095;</button>
+        </div>
+      </div>
+      <div class="page five">
+        <div class="row-container">
+          <div class="left">
+            <div id="nama" class="text-9xl">Muhamad Fiqih Ikhsan</div>
+            <div id="nim" class="text-2xl">24060120140097</div>
+          </div>
+          <div class="right">
+            <img src="images/fiqih.png" class="max-w-lg" alt="">
+          </div>
+        </div>
+        <div>
+          <button onClick="slide('previous')">&#10094;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="container-bottom "  id="contact">
+    <div class="contact js-scroll fade-in-bottom">
+      <div class="row">
+        <div class="class">
+          <h2 id="subtitle">Let's be a good friend with us &#128513</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="contact">
+          <form class="form_test" onsubmit="message(event)">
+            <div class="form-group">
+              <label for="nama" class="form-label">Name</label><br>
+              <input required type="text" id="input-name" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="tel" class="form-label">Phone Number</label><br>
+              <input required type="tel" id="telp" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Get to know</label><br>
+              <textarea required id="msg" class="form-control" cols="150" rows="3" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
